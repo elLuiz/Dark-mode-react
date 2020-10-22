@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  font: 600 1rem "Roboto", sans-serif;
+}
+
+.index-container {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+.index-dark-container {
+  background: #323232;
+}
+
+/*# sourceMappingURL=index.css.map */

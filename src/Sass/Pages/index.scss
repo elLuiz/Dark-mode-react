@@ -1,0 +1,11 @@
+@import '../config';
+
+.index-container{
+    width: 100vw;
+    height: 100vh;
+    background: $background-light-color;
+}
+
+.index-dark-container{
+    background: $background-dark-color;
+}

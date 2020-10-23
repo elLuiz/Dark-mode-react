@@ -8,9 +8,8 @@ export class Index extends Component {
     static contextType = Theme;
     
     render() {
-        console.log(this.context)
         return (
-            <div className={this.context === 'light' ? "index-container" : "index-container index-dark-container"}>
+            <div className={this.context.theme === 'light' ? "index-container" : "index-container index-dark-container"}>
                 <Nav />
             </div>
         )

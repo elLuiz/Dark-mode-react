@@ -7,8 +7,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 0.2rem;
-    box-shadow: 0px 2px 4px $box-shadow;
+}
+
+.nav-dark{
+    background-color: $background-dark-color;
+    box-shadow: unset;
+
+    .links{
+        a{
+            color: $color-dark-text-primary;
+        }
+    }
 }
 
 @import './logo';
 @import './links';
+@import './responsive';

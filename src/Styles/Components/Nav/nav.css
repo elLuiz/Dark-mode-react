@@ -5,19 +5,30 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.2rem;
-  box-shadow: 0px 2px 4px #646464;
+}
+
+.nav-dark {
+  background-color: #323232;
+  box-shadow: unset;
+}
+.nav-dark .links a {
+  color: #BEBEBE;
 }
 
 .logo {
-  font: 600 1rem "Orbitron";
+  font: 600 0.8rem "Orbitron";
   color: #317BA5;
 }
 
 .links {
-  width: 50%;
+  position: absolute;
+  top: 4.5rem;
+  left: 0;
+  width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 4px #646464;
 }
 .links a {
   text-decoration: none;
@@ -32,6 +43,27 @@
 }
 .links a:hover {
   color: #A0A0A0;
+}
+
+@media (min-width: 1000px) {
+  .nav {
+    box-shadow: 0px 1px 2px #646464;
+  }
+
+  .logo {
+    font-size: 1rem !important;
+  }
+
+  .links {
+    position: unset !important;
+    top: 0;
+    left: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: unset !important;
+  }
 }
 
 /*# sourceMappingURL=nav.css.map */

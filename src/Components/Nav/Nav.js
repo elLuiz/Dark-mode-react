@@ -6,9 +6,8 @@ import Logo from './Logo';
 import ToggleSwitch from '../ToggleSwitch/ToggleSwitch';
 export default function Nav() {
     const theme = useContext(Theme);
-    console.log(theme)
     return (
-        <nav className={theme === 'light' ? 'nav': 'nav nav-dark'}>
+        <nav className={theme.theme === 'light' ? 'nav': 'nav nav-dark'}>
             <Logo />
             <Links />
             <ToggleSwitch />

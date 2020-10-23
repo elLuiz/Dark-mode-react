@@ -1,0 +1,19 @@
+@media(min-width: 1000px){
+    .nav{
+        box-shadow: 0px 1px 2px $box-shadow;
+    }
+
+    .logo{
+        font-size: 1rem !important;
+    }
+    .links{
+        position: unset !important;
+        top: 0;
+        left: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: unset !important;
+    }
+}

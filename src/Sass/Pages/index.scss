@@ -4,6 +4,7 @@
     width: 100vw;
     height: 100vh;
     background: $background-light-color;
+    transition: background .4s ease;
 }
 
 .index-dark-container{

@@ -1,26 +1,36 @@
-.toggle-switch {
+@charset "UTF-8";
+.toggle-switch-container {
+  width: 10%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.toggle-switch-container .toggle-switch {
   position: relative;
   display: inline-block;
-  width: 3rem;
-  height: 1rem;
+  width: 2.5rem;
+  height: 1.3rem;
 }
-.toggle-switch input {
+.toggle-switch-container .toggle-switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
-.toggle-switch input:checked + .slider {
+.toggle-switch-container .toggle-switch input:checked + .slider {
   background-color: #457997;
 }
-.toggle-switch input:focus + .slider {
+.toggle-switch-container .toggle-switch input:focus + .slider {
   box-shadow: 0px 0px 2px #457997;
 }
-.toggle-switch input:checked + .slider::before {
-  -webkit-transform: translateX(2rem);
-  -ms-transform: translateX(2rem);
-  transform: translateX(2rem);
+.toggle-switch-container .toggle-switch input:checked + .slider::before {
+  -webkit-transform: translateX(1.2rem);
+  -ms-transform: translateX(1.2rem);
+  transform: translateX(1.2rem);
+  font-family: "Font Awesome 5 Free";
+  content: " ";
+  color: #457997;
 }
-.toggle-switch .slider {
+.toggle-switch-container .toggle-switch .slider {
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -30,21 +40,29 @@
   background-color: #BEBEBE;
   transition: 0.4s;
 }
-.toggle-switch .slider::before {
+.toggle-switch-container .toggle-switch .slider::before {
+  display: block;
   position: absolute;
   content: " ";
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.3rem;
+  height: 1.3rem;
   left: 0px;
-  bottom: 1px;
-  background-color: #646464;
-  transition: 0.4s;
+  bottom: 0rem;
+  background-color: #A9A9A9;
+  transition: all 0.4s ease-in;
 }
-.toggle-switch .round {
+.toggle-switch-container .toggle-switch .round {
   border-radius: 10px;
 }
-.toggle-switch .round::before {
+.toggle-switch-container .toggle-switch .round::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E5EA00;
   border-radius: 50%;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: " ";
 }
 
 /*# sourceMappingURL=toggle.css.map */

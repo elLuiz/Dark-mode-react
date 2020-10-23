@@ -1,8 +1,12 @@
 .links{
-    width: 50%;
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0px 2px 4px $box-shadow;
 
     a{
         text-decoration: none;
